@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    --mate-color:  #15177e;
+    --mate-background:#d1e2ee;
+}
+
+.sidebarOption {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.sidebarOption .material-icons,
+.fa-twitter {
+    padding: 20px;
+}
+.sidebarOption h2 {
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.sidebarOption:hover {
+    background-color: var(--mate-background);
+    border-radius: 30px;
+    color: var(--mate-color);
+    transition: color 100ms ease-out;
+}
+.sidebarOption.active{
+    color: var(--mate-color);
+}
+.sidebar_tweet {
+    width: 100%;
+    background-color: var(--mate-color);
+    border: none;
+    color: white;
+    font-weight: 900;
+    border-radius: 30px;
+    height: 50px;
+    margin-top: 20px;
+}
+body {
+    display: flex;
+    height: 100vh;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+}
+.sidebar {
+     border-right: 1px solid var(--mate-background);
+     flex: 0.2;
+     min-width: 250px;
+     margin-top: 20px;
+     padding-left: 20px;
+     padding-right: 20px;    
+}
+.fa-puzzle-piece {
+    color: var(--mate-color);
+    font-size: 20px;
+
+    
+}
