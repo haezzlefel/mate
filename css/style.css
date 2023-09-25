@@ -14,7 +14,7 @@ body {
     cursor: pointer;
 }
 .sidebarOption .material-icons,
-.fa-twitter {
+.fa-puzzle-piece {
     padding: 20px;
 }
 .sidebarOption h2 {
@@ -59,7 +59,67 @@ body {
 }
 .fa-puzzle-piece {
     color: var(--mate-color);
-    font-size: 20px;
+    font-size: 20px;   
+}
+.feed {
+    flex: 0.5;
+    border-right: 1px solid var(--mate-background);
+    min-width: fit-content;
+    overflow-y: scroll;
+}
+.feed_header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    border: 1px solid var(--mate-background);
+    padding: 15px 20px;
 
-    
+}
+.feed_header h2 {
+    font-size: 20px;
+    font-weight: 800;
+}
+.feed::-webkit-scrollbar {
+    display: none;
+}
+.feed {
+    -ms-overflow-style:none;
+    scrollbar-width:none;
+}
+/*matebox*/
+.tweetbox_input img {
+    border-radius: 50%;
+    height: 40px;
+}
+.tweetBox {
+    padding-bottom: 10px;
+    border-bottom: 8px solid var(--mate-background);
+    padding-right: 10px;
+}
+.tweetBox_form {
+    display: flex;
+    flex-direction: column;
+}
+.tweetbox_input {
+    display: flex;
+    padding: 20px;
+}
+.tweetbox_input input {
+    flex: 1;
+    margin-left: 20px;
+    font-size: 20px;
+    border:none;
+    outline: none;
+}
+.tweetBox_tweetButton {
+    background-color: var(--mate-color);
+    border: none;
+    color: white;
+    font-weight: 900;
+    border-radius: 30px;
+    width: 80px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: auto;
 }
