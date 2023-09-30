@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://kit.fontawesome.com/c06e76d496.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <title>Main Page</title>
@@ -12,7 +13,7 @@
 <body>
 <!---sidebar---->
 <div class="sidebar">
-    <i class="fa-solid fas fa-puzzle-piece">  Mate Connect</i>
+    <i class="fa-solid fas fa-puzzle-piece" style="text-transform: lowercase;">  Mate Connect</i>
     <div class="sidebarOption active">
     <span class="material-icons">home</span>    
     <h2>Home</h2>
@@ -33,14 +34,10 @@
     <h2>Messages</h2>
     </div>      
 
-    <div class="sidebarOption">
-    <span class="material-icons">bookmark_border</span>    
-    <h2>Bookmarks</h2>
-    </div>
 
     <div class="sidebarOption">
     <span class="material-icons">list_alt</span>    
-    <h2>List</h2>
+    <h2>Friend List</h2>
     </div>
 
     <div class="sidebarOption">
@@ -48,11 +45,7 @@
     <h2>Profile</h2>
     </div>
     
-    <div class="sidebarOption">
-    <span class="material-icons">more_horiz</span>    
-    <h2>More</h2>
-    </div>
-    <button class="sidebar_tweet">Create Post</button>
+    <button class="sidebar_post">Create Post</button>
 
 </div>
 <!---sidebar---->
@@ -62,61 +55,66 @@
         <h2>Home</h2>
     </div> 
 <!---post--->
-<div class="tweetBox">
+<div class="mateBox">
     <form>
-        <div class="tweetbox_input">
+        <div class="matebox_input">
             <img src="./images/cat.jpg" alt="">
             <input type="text" placeholder="What's Happening?">
         </div>
-        <button class="tweetBox_tweetButton">Post</button>
+        <button class="mateBox_mateButton">Post</button>
     </form>
 </div>
 <!---post 2-->
-    <div class="post">
-        <div class="post_avatar">
-            <img src="./images/cat.jpg" alt="">
-        </div>
-        <div class="post_body">
-            <div class="post_header">
-                <div class="post_headerText">
-                    <h3>Zila M.</h3>
-                    <span class="post_headerSpecial">
-                        <span class="material-icons post_badge">verified</span>
-                    </span>
-                </div>
-                <div class="post_headerDescription">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </div>
-            <img src="./images/cat2.png">
-            <div class="post_footer">
-                <span class="material-icons"> repeat </span>
-                <span class="material-icons"> favorite_border </span>
-                <span class="material-icons"> publish </span>
-            </div>
-        </div>
-
-    </div>
-
-<!---post 2-->
-<!---post 3-->
+      
+<!---new-->
 <div class="post">
     <div class="post_avatar">
-        <img src="./images/cat.jpg" alt="">
+        <img src="./images/cat2.png" alt="" >
     </div>
     <div class="post_body">
         <div class="post_header">
             <div class="post_headerText">
-                <h3>Zila M.</h3>
-                <span class="post_headerSpecial">
-                    <span class="material-icons post_badge">verified</span>
-                </span>
+                <h3>Uno 
+                    <span class="post_headerSpecial">
+                        <span class="material-icons post_badge"> verified </span>
+                        @UnoRafael
+                    </span>
+                </h3>
             </div>
             <div class="post_headerDescription">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam atque molestias </p>
             </div>
         </div>
-        <img src="./images/cat2.png">
+        
+        <img src="./images/cat.jpg">
+        <div class="post_footer">
+            <span class="material-icons"> repeat </span>
+            <span class="material-icons"> favorite_border </span>
+            <span class="material-icons"> publish </span>
+        </div>
+    </div>
+</div>
+<!---new-->
+<div class="post">
+    <div class="post_avatar">
+        <img src="./images/cat2.png" alt="">
+    </div>
+    <div class="post_body">
+        <div class="post_header">
+            <div class="post_headerText">
+                <h3>Uno
+                    <span class="post_headerSpecial">
+                        <span class="material-icons post_badge"> verified </span>
+                        @UnoRafael
+                    </span>
+                </h3>
+            </div>
+            <div class="post_headerDescription">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam atque molestias </p>
+            </div>
+        </div>
+        
+        <img src="./images/cat.jpg">
         <div class="post_footer">
             <span class="material-icons"> repeat </span>
             <span class="material-icons"> favorite_border </span>
@@ -132,11 +130,49 @@
         <span class="material-icons widgets_searchIcons">search</span>
         <input type="text" placeholder="Search Mate">
     </div>
-<div class="widgets_widgetsContainer">
-    <h2>What's Happening?</h2>
-    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Sunsets don&#39;t get much better than this one over <a href="https://twitter.com/GrandTetonNPS?ref_src=twsrc%5Etfw">@GrandTetonNPS</a>. <a href="https://twitter.com/hashtag/nature?src=hash&amp;ref_src=twsrc%5Etfw">#nature</a> <a href="https://twitter.com/hashtag/sunset?src=hash&amp;ref_src=twsrc%5Etfw">#sunset</a> <a href="http://t.co/YuKy2rcjyU">pic.twitter.com/YuKy2rcjyU</a></p>&mdash; US Department of the Interior (@Interior) <a href="https://twitter.com/Interior/status/463440424141459456?ref_src=twsrc%5Etfw">September 25, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<div class="widgets_widgetContainer">
+    <h2>You might like</h2>
+    <!---new-->
+<div class="post">
+    <div class="post_avatar">
+        <img src="./images/dog2.jpeg" alt="">        
+    </div>
+    <div class="post_body">
+        <h3>Inigo
+            <span class="post_headerSpecial">
+            <span class="material-icons post_badge"> verified </span>
+            @inigoluis02</span>
+        </h3>
+        <button class="btn">Follow</button>
+    </div>
 </div>
+<div class="post">
+    <div class="post_avatar">
+        <img src="./images/dog.jpg" alt="">        
+    </div>
+    <div class="post_body">
+        <h3>Jacob
+            <span class="post_headerSpecial">
+            <span class="material-icons post_badge"> verified </span>
+            @hakobi12</span>
+        </h3>
+        <button class="btn">Follow</button>
+    </div>
 </div>
+<div class="post">
+    <div class="post_avatar">
+        <img src="./images/dog3.jpeg" alt="">        
+    </div>
+    <div class="post_body">
+        <h3>Zia M.
+            <span class="post_headerSpecial">
+            <span class="material-icons post_badge"> verified </span>
+            @ziamz</span>
+        </h3>
+        <button class="btn">Follow</button>
+    </div>
+</div>
+
 <!---widgets-->
 
 <!---feed-->
