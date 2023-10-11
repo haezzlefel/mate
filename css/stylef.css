@@ -1,0 +1,18 @@
+body {
+    --mate-color:  #15177e;
+    --mate-background:#d1e2ee;
+}
+
+.friend-cards > .card-img-top {
+    cursor: pointer;
+  }
+  
+
+  p {
+    word-break: break-all;
+  }
+
+.my-color-bg {
+    background-color: var;
+}
+  
