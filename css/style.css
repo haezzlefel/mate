@@ -18,15 +18,18 @@ body {
 .sidebarOption .material-icons,
 .fa-puzzle-piece {
     padding: 15px;
+    color: var(--mate-color);
 }
 .sidebarOption h2 {
     font-weight: 800;
     font-size: 17px;
-    margin-right: 20px;
+    margin-right: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--mate-color);
+
 }
-.sidebarOption:hover {
-    background-color: var(--mate-background);
+
+.sidebarOption:hover {sty
     border-radius: 20px;
     color: var(--mate-color);
     transition: color 100ms ease-out;

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Post</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="card">
+            <div class="card-header">
+                Zia
+            </div>
+            <div class="card-body">
+                <img src="./images/cat2.png">
+                <p>Just look at this little ball of fur!  Our furry friend here is the epitome of adorableness. From those big, bright eyes to the softest paws, this cat is pure cuteness. Who can resist that charm? Let's take a moment to appreciate the simple joys of life that our feline friends bring us every day. Share if you agree! #AdorableCat #FurryFriend #CutenessOverload</p>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#commentModal">Add Comment</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comment Modal -->
+    <div class="modal fade" id="commentModal" tabindex="-1" role="dialog" aria-labelledby="commentModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="commentModalLabel">Add Comment</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="commentText">Comment</label>
+                            <textarea class="form-control" id="commentText" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Post Comment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

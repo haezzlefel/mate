@@ -17,7 +17,7 @@
     <i class="fa-solid fas fa-puzzle-piece" style="text-transform: lowercase;">  Mate Connect</i>
     <div class="sidebarOption active">
     <span class="material-icons">home</span>    
-    <h2>Home</h2>
+    <a style="text-decoration: none; color: black;"href="index.html"><h2>Home</h2></a>
     </div>
 
     <div class="sidebarOption">
@@ -27,19 +27,17 @@
 
     <div class="sidebarOption">
     <span class="material-icons">notifications_none</span>    
-    <h2>Notifications</h2>
+    <a style="text-decoration: none; color:#15177e;"href="notification.html"><h2>Notifications</h2></a>
     </div>
 
     <div class="sidebarOption">
     <span class="material-icons">mail_outline</span>    
     <h2>Messages</h2>
-    </div>      
-
+    </div>
 
     <div class="sidebarOption">
-    <a href="friendlist.html">
     <span class="material-icons">list_alt</span>    
-    <h2>Friend List</h2></a>
+    <a style="text-decoration: none; color:#15177e;" href="friendlist.html"><h2>Friend List</h2></a>
     </div>
 
     <div class="sidebarOption">
@@ -92,18 +90,45 @@
                 </h3>
             </div>
             <div class="post_headerDescription">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam atque molestias </p>
+                <p>Pawsitively adorable! #Purrfection</p>
             </div>
         </div>
         
-        <img src="./images/cat.jpg">
+        <img src="./images/2cccat.webp">
         <div class="post_footer">
             <span class="material-icons"> favorite_border </span>
-            <span class="material-symbols-outlined">mode_comment</span>
+            <button data-toggle="modal" data-target="#commentModal">
+            <span class="material-symbols-outlined">mode_comment</span></button>  
             <span class="material-symbols-outlined">share</span>
         </div>
+        <div class="modal fade" id="commentModal" tabindex="-1" role="dialog" aria-labelledby="commentModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="commentModalLabel">Add Comment</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="commentText">Comment</label>
+                                <textarea class="form-control" id="commentText" rows="3"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Post Comment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
     </div>
 </div>
+
 <!---new-->
 <div class="post">
     <div class="post_avatar">
@@ -120,11 +145,11 @@
                 </h3>
             </div>
             <div class="post_headerDescription">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam atque molestias </p>
+                <p>Just look at this little ball of fur!Share if you agree! </p>
             </div>
         </div>
         
-        <img src="./images/cat.jpg">
+        <img src="./images/222cat2.jpeg">
         <div class="post_footer">
             <span class="material-icons"> favorite_border </span>
             <span class="material-symbols-outlined">mode_comment</span>
@@ -149,11 +174,11 @@
                 </h3>
             </div>
             <div class="post_headerDescription">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam atque molestias </p>
+                <p> Cuteness overload alert! </p>
             </div>
         </div>
         
-        <img src="./images/cat.jpg">
+        <img src="./images/seven.jpg">
         <div class="post_footer">
             <span class="material-icons"> favorite_border </span>
             <span class="material-symbols-outlined">mode_comment</span>

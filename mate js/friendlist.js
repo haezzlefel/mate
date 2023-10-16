@@ -109,3 +109,24 @@ friendList.addEventListener("click", function clickOnImage(event) {
     displayFriendDetail(Number(event.target.dataset.id));
   }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  const searchInput = document.getElementById("searchInput");
+  const friendCards = document.querySelectorAll(".friend-cards");
+
+  searchInput.addEventListener("input", function() {
+      const searchTerm = searchInput.value.trim().toLowerCase();
+
+      friendCards.forEach(card => {
+          const cardTitle = card.querySelector(".card-title");
+          const friendName = cardTitle.textContent.toLowerCase();
+          const shouldDisplay = friendName.includes(searchTerm);
+
+          if (shouldDisplay) {
+              card.style.display = "block";
+          } else {
+              card.style.display = "none";
+          }
+      });
+  });
+});
